@@ -160,6 +160,7 @@ let copy_file file1 file2 =
     let i = open_in file1 in
     let o = open_out file2 in
     (*do the copying*)
+    copy i o;
     close_in i;
     close_out o
   with
